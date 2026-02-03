@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One-Button Roguelike</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game">
+    <header class="hud">
+      <div>
+        <span class="label">Run</span>
+        <span id="run-count">1</span>
+      </div>
+      <div>
+        <span class="label">Level</span>
+        <span id="level">1</span>
+      </div>
+      <div>
+        <span class="label">Distance</span>
+        <span id="distance">0</span>
+      </div>
+    </header>
+
+    <div class="canvas-wrap">
+      <canvas id="game" width="960" height="540"></canvas>
+      <div class="overlay" id="overlay">
+        <h1>One-Button Roguelike</h1>
+        <p>Press <strong>Space</strong> or <strong>Click</strong> to dash upward. Survive the room.</p>
+        <p class="sub">Instant death. Instant restart. Procedural rooms. One button.</p>
+        <button id="start">Start Run</button>
+      </div>
+    </div>
+
+    <footer class="tips">
+      <p>Tip: The rooms are short and brutal. Every clear makes the next room faster and tighter.</p>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
